@@ -1,0 +1,27 @@
+// 通用懶人包
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+body {
+    font-family: "Bruno Ace SC", "Noto Sans TC", "sans-serif";
+    line-height: 1.5;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1320px;
+    padding-right: 12px;
+    padding-left: 12px;
+    @media (max-width: 992px) {
+        padding-right: 36px;
+        padding-left: 36px;
+    }
+    @media (max-width: 767px) {
+        padding-right: 14px;
+        padding-left: 14px;
+    }
+}

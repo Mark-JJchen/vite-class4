@@ -1,0 +1,46 @@
+nav {
+  background-color: $color_red;
+  padding: 16px 0;
+  img {
+    height: 48px;
+  }
+  ul {
+    gap: 60px;
+    font-size: 20px;
+  }
+  a {
+    color: $color_white;
+    display: block;
+  }
+}
+@media (max-width: 992px) {
+  nav {
+    padding: 12px 0px;
+  }
+}
+@media (max-width: 767px) {
+  nav {
+    padding: 0;
+    .container {
+      display: block;
+      padding-left: 0px;
+      padding-right: 0px;
+      div {
+        padding: 12px 15px;
+      }
+    }
+    ul {
+      gap: 0;
+      flex-wrap: wrap;
+      font-size: 16px;
+    }
+    li {
+      width: 50%;
+      border: 1px solid white;
+      text-align: center;
+    }
+    a {
+      padding: 12px 0;
+    }
+  }
+}

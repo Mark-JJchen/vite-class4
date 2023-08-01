@@ -1,0 +1,74 @@
+h3 {
+  text-align: left;
+  color: $color_black;
+  border-left: 8px solid $color_red;
+  padding-left: 16px;
+}
+
+.stores {
+  padding-top: 96px;
+  padding-bottom: 80px;
+  font-family: "Noto Sans TC", sans-serif;
+}
+
+.store-select {
+  margin: 33px 0 41px;
+  select {
+    height: 36px;
+    width: 304px;
+    color: #495057;
+    font-size: 18px;
+    padding: 0 12px;
+    margin-left: 16px;
+  }
+}
+
+.stores-content {
+  gap: 24px;
+  flex-wrap: wrap;
+  .store-list {
+    width: calc((100% - 24 * 3px) / 3);
+    margin-bottom: 24px;
+  }
+  h4 {
+    padding: 8px 24px;
+    text-align: left;
+    border: 1px #00000020 solid;
+  }
+  button {
+    width: 100%;
+    border: none;
+    font-size: 19px;
+    text-align: center;
+    padding: 16px 0;
+    background: $color_black;
+    color: $color_white;
+  }
+  .contact-info {
+    padding: 16px 24px;
+    border: 1px #00000020 solid;
+    font-size: 20px;
+  }
+  .material-symbols-outlined {
+    margin-right: 8px;
+  }
+}
+@media (max-width: 992px) {
+  .stores {
+    padding-top: 40px;
+    padding-bottom: 64px;
+  }
+  .stores-content {
+    .store-list {
+      width: calc((100% - 24px) / 2);
+      margin-bottom: 0;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .stores-content {
+    .store-list {
+      width: 100%;
+    }
+  }
+}
